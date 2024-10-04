@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGEA cambio de contraseña</title>
+    <link rel="stylesheet" href="contra.css">
+    <link rel="icon" type="img" href="favicon.ico">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" class="logo"> 
+            </div>
+            <ul>
+                <li><a href="estudiante.html">Estudiantes</a></li>
+                <li><a href="contra.html">Cambiar Contraseña</a></li>
+                <li><a href="index.html">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Cambiar la contraseña del usuario Eduar José Suárez Graterol</h2>
+        <form>
+            <label for="contrasena-actual">Contraseña actual:*</label>
+            <input type="password" id="contrasena-actual" name="contrasena-actual" required>
+
+            <label for="nueva-contrasena">Nueva contraseña:*</label>
+            <input type="password" id="nueva-contrasena" name="nueva-contrasena" required>
+
+            <label for="repetir-contrasena">Repita la nueva contraseña:</label>
+            <input type="password" id="repetir-contrasena" name="repetir-contrasena" required>
+
+            <label for="pregunta-secreta">Pregunta secreta:</label>
+            <select id="pregunta-secreta" name="pregunta-secreta">
+                <option value="">¿Cuál es el segundo nombre de mi madre?</option>
+                </select>
+
+            <label for="respuesta-secreta">Respuesta a la pregunta secreta:</label>
+            <input type="password" id="respuesta-secreta" name="respuesta-secreta" required>
+
+            <input type="submit" value="Cambiar contraseña">
+        </form>
+    </div>
+</body>
+</html>
