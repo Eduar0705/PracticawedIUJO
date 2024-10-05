@@ -41,8 +41,8 @@ header nav a {
     margin: 20px;
     background-color: #fff;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.216);
+    background: rgba(128, 136, 77, 0.138);
+    box-shadow: 0 0 1rem 0 rgba(3, 3, 2, 0.489);
     backdrop-filter: blur(10px);
 }
 
@@ -67,7 +67,7 @@ select {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #329536;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -78,4 +78,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.botton{
+    font-size: 50px;
 }
