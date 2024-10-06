@@ -41,15 +41,15 @@ input[type="password"] {
     box-sizing: border-box;
 }
   
-.siguiente {
+button{
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     margin: 10px 0;
-    border: none;
     border-radius: 10px;
     cursor: pointer;
-    width: 90%;
+    width: 100%;
+    font-size: 20px;
 }
   
 .siguiente a {

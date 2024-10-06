@@ -27,17 +27,51 @@
             <input type="password" id="password" name="password" required>
           </div>
 
-            <div class="siguiente">
-              <a href="intro.html">
-                <p>Conectarse</p>
-              </a>
-            </div>
+          <div class="siguiente">
+            <button type="submit">Conectarse</button>
+          </div>
           <a href="#" class="forgot">¿Olvidó su contraseña?</a>
     </div>
     
 
-   
-
-
+    <script>
+      const form = document.getElementById('login-form');
+      const cedulaInput = document.getElementById('cedula');
+      const contraseñaInput = document.getElementById('password');
+    
+      const cedulaEsperada = '31466704';
+      const contraseñaEsperada = '31466704';
+    
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const cedula = cedulaInput.value; // Get the value from the input field
+        const contraseña = contraseñaInput.value; // Get the value from the input field
+    
+        // Validación básica
+        if (cedula === '' || contraseña === '') {
+          alert('Por favor, ingrese ambos campos');
+          return;
+        }
+    
+        // Validación de cédula (suponiendo que es un número de 10 dígitos)
+        if (cedula !== cedulaEsperada) {
+          alert('La cédula es incorrecta');
+          return;
+        }
+    
+        // Validación de contraseña (suponiendo que debe coincidir con la contraseña esperada)
+        if (contraseña !== contraseñaEsperada) {
+          alert('La contraseña es incorrecta');
+          return;
+        }
+    
+        // Si todo está bien, podemos enviar los datos al servidor para verificar la autenticidad
+        // Aquí puedes agregar la lógica para enviar los datos al servidor
+        console.log('Datos válidos:', cedula, contraseña);
+        
+        // Navigate to the next page
+        window.location.href = 'intro.html';
+      });
+    </script>
 </body>
 </html>
